@@ -46,6 +46,19 @@ const CLOAK_PRESETS = [
 // Fallback games
 const FALLBACK_GAMES = [
   {
+    id: "cool-cookie-clicker",
+    title: "Cool Cookie Clicker",
+    category: "Casual",
+    badge: "Popular",
+    rating: 4.9,
+    plays: "1.4M",
+    thumbnail: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80",
+    description: "Bake billions of cookies! Click the giant cookie, purchase grandmas, cookie farms, factories, and unlock countless upgrades in this addictive unblocked classic.",
+    controls: "Click or Tap to bake cookies and buy upgrades",
+    tags: ["Clicker", "Idle", "Casual", "Tycoon", "Addictive"],
+    iframeSrc: "./games/2025/construct/260/cool-cookie-clicker/index.html"
+  },
+  {
     id: "snow-rider-3d",
     title: "Snow Rider 3D",
     category: "Action",
