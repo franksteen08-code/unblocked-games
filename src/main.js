@@ -43,137 +43,20 @@ const CLOAK_PRESETS = [
   }
 ];
 
-// Fallback games if games.json fails to fetch
+// Fallback games
 const FALLBACK_GAMES = [
   {
-    id: "slope-runner",
-    title: "Slope Runner 3D",
+    id: "brotato",
+    title: "Brotato",
     category: "Action",
-    badge: "Hot",
-    rating: 4.9,
-    plays: "1.2M",
-    thumbnail: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80",
-    description: "High-speed 3D tunnel runner. Steer your ball through an endless neon highway, dodge obstacles, and survive high-velocity drops.",
-    controls: "A/D or Left/Right Arrow to steer",
-    tags: ["3D", "Runner", "Fast-Paced", "Neon", "Arcade"],
-    iframeSrc: "./games/slope.html"
-  },
-  {
-    id: "2048-classic",
-    title: "2048 Classic",
-    category: "Puzzle",
-    badge: "Popular",
-    rating: 4.8,
-    plays: "980K",
-    thumbnail: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80",
-    description: "Join the numbers and get to the 2048 tile! Slide tiles across the grid, combine identical powers of two, and aim for the highest score.",
-    controls: "Arrow keys or WASD or Swipe to slide tiles",
-    tags: ["Numbers", "Brain", "Strategy", "Math"],
-    iframeSrc: "./games/2048.html"
-  },
-  {
-    id: "flappy-bird",
-    title: "Flappy Bird",
-    category: "Arcade",
-    badge: "Classic",
-    rating: 4.7,
-    plays: "850K",
-    thumbnail: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=600&q=80",
-    description: "The timeless tap-to-fly arcade game. Guide your bird through treacherous green pipes without hitting the edges.",
-    controls: "Space, Click, or Tap to flap wings",
-    tags: ["Arcade", "One-Button", "Skill", "Addictive"],
-    iframeSrc: "./games/flappy-bird.html"
-  },
-  {
-    id: "tetris-classic",
-    title: "Tetris Classic",
-    category: "Puzzle",
-    badge: "Top Rated",
-    rating: 4.9,
-    plays: "1.5M",
-    thumbnail: "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
-    description: "Drop, rotate, and clear lines with falling tetromino blocks. Features SRS rotation, level scaling, and soft/hard drop.",
-    controls: "Left/Right to move, Up to rotate, Down to soft drop, Space to hard drop",
-    tags: ["Retro", "Puzzle", "Blocks", "Strategy"],
-    iframeSrc: "./games/tetris.html"
-  },
-  {
-    id: "cookie-clicker",
-    title: "Cookie Clicker Empire",
-    category: "Casual",
-    badge: "Addictive",
-    rating: 4.9,
-    plays: "2.1M",
-    thumbnail: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=600&q=80",
-    description: "Bake millions of cookies! Hire grandmas, construct cookie farms, open factories, and ascend to cosmic confectionary greatness.",
-    controls: "Click big cookie and purchase empire upgrades",
-    tags: ["Idle", "Clicker", "Management", "Tycoon"],
-    iframeSrc: "./games/cookie-clicker.html"
-  },
-  {
-    id: "retro-snake",
-    title: "Retro Snake",
-    category: "Retro",
-    badge: "Retro",
-    rating: 4.6,
-    plays: "640K",
-    thumbnail: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80",
-    description: "Eat the glowing apples, grow your tail, and avoid crashing into walls or yourself in this polished nostalgic arcade staple.",
-    controls: "Arrow keys or WASD to steer",
-    tags: ["Retro", "Classic", "Arcade", "Nokia"],
-    iframeSrc: "./games/snake.html"
-  },
-  {
-    id: "space-invaders",
-    title: "Space Invaders",
-    category: "Action",
-    badge: "Classic",
-    rating: 4.7,
-    plays: "520K",
-    thumbnail: "https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80",
-    description: "Defend humanity against waves of descending alien invaders. Dodge enemy projectile barrages and clear the orbital sector.",
-    controls: "Arrow keys to move, Space to fire lasers",
-    tags: ["Retro", "Shooter", "Space", "Arcade"],
-    iframeSrc: "./games/space-invaders.html"
-  },
-  {
-    id: "neon-breakout",
-    title: "Neon Breakout",
-    category: "Arcade",
     badge: "Featured",
-    rating: 4.8,
-    plays: "480K",
-    thumbnail: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80",
-    description: "Smash your way through vibrant neon brick formations. Control the paddle bounce angle to target stubborn upper rows.",
-    controls: "Mouse or Left/Right arrows to control paddle",
-    tags: ["Brick Breaker", "Arcade", "Physics", "Neon"],
-    iframeSrc: "./games/breakout.html"
-  },
-  {
-    id: "retro-pong",
-    title: "Retro Pong",
-    category: "Sports",
-    badge: "2-Player",
-    rating: 4.5,
-    plays: "390K",
-    thumbnail: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80",
-    description: "The arcade forefather of video games. Challenge the computer with three difficulty modes, or challenge a friend locally in 2P mode.",
-    controls: "P1: W/S or Mouse | P2: Up/Down Arrows",
-    tags: ["Sports", "2-Player", "Retro", "Paddle"],
-    iframeSrc: "./games/pong.html"
-  },
-  {
-    id: "hextris",
-    title: "Hextris Hexagon",
-    category: "Puzzle",
-    badge: "Fast",
-    rating: 4.8,
-    plays: "730K",
-    thumbnail: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",
-    description: "Fast-paced hexagonal puzzle game inspired by Tetris. Rotate the hexagon to connect 3 or more blocks of the same color.",
-    controls: "Left / Right arrow keys to rotate hexagon",
-    tags: ["Puzzle", "Hexagon", "Fast", "Match-3"],
-    iframeSrc: "https://hextris.io/"
+    rating: 4.9,
+    plays: "540K",
+    thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    description: "Top-down arena shooter roguelite where you play a potato wielding up to 6 weapons at a time to fight off hordes of aliens. Choose traits and items to survive until help arrives.",
+    controls: "WASD or Arrow keys to move · Mouse/Auto to aim",
+    tags: ["Action", "Roguelite", "Shooter", "Survival", "Arena"],
+    iframeSrc: "https://ubghyper.github.io/GameList.github.io/Brotato/"
   }
 ];
 
@@ -228,9 +111,9 @@ async function initApp() {
     if (!res.ok) throw new Error('Fetch failed');
     const data = await res.json();
     const customGames = JSON.parse(localStorage.getItem('nova_custom_games') || '[]');
-    allGames = [...customGames, ...data];
+    allGames = [...customGames, ...(Array.isArray(data) ? data : [])];
   } catch (err) {
-    console.warn('Loading fallback games data:', err);
+    console.warn('Could not fetch games.json, using custom stored games:', err);
     const customGames = JSON.parse(localStorage.getItem('nova_custom_games') || '[]');
     allGames = [...customGames, ...FALLBACK_GAMES];
   }
@@ -268,20 +151,25 @@ function resolveGameUrl(game) {
 
 // Render Featured Hero
 function renderHero() {
-  const featured = allGames.find(g => g.id === 'slope-runner') || allGames[0];
-  if (!featured) return;
+  const featured = allGames[0];
+  if (!featured) {
+    if (heroSection) heroSection.style.display = 'none';
+    return;
+  }
 
   const heroCard = document.getElementById('hero-card');
   if (!heroCard) return;
+
+  if (heroSection) heroSection.style.display = 'block';
 
   heroCard.innerHTML = `
     <div class="hero-info">
       <div class="hero-kicker">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
-        <span>Featured Arcade Hit · ${featured.category}</span>
+        <span>Featured Game · ${featured.category || 'Arcade'}</span>
       </div>
       <h1 class="hero-title">${featured.title}</h1>
-      <p class="hero-desc">${featured.description}</p>
+      <p class="hero-desc">${featured.description || ''}</p>
       <div class="hero-buttons">
         <button class="btn-primary" onclick="launchGame('${featured.id}')">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -294,7 +182,7 @@ function renderHero() {
       </div>
     </div>
     <div class="hero-thumbnail" onclick="launchGame('${featured.id}')">
-      <img src="${featured.thumbnail}" alt="${featured.title}" />
+      <img src="${featured.thumbnail || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80'}" alt="${featured.title}" />
       <div class="hero-play-overlay">
         <div class="hero-play-btn">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -312,12 +200,12 @@ function renderGames() {
     if (activeCategory === 'favorites') {
       if (!favorites.includes(game.id)) return false;
     } else if (activeCategory !== 'all') {
-      if (game.category.toLowerCase() !== activeCategory.toLowerCase()) return false;
+      if ((game.category || '').toLowerCase() !== activeCategory.toLowerCase()) return false;
     }
     if (q) {
-      const matchTitle = game.title.toLowerCase().includes(q);
-      const matchDesc = game.description.toLowerCase().includes(q);
-      const matchCat = game.category.toLowerCase().includes(q);
+      const matchTitle = (game.title || '').toLowerCase().includes(q);
+      const matchDesc = (game.description || '').toLowerCase().includes(q);
+      const matchCat = (game.category || '').toLowerCase().includes(q);
       const matchTag = game.tags?.some(t => t.toLowerCase().includes(q));
       return matchTitle || matchDesc || matchCat || matchTag;
     }
@@ -325,22 +213,41 @@ function renderGames() {
   });
 
   if (sortOption === 'rating') {
-    filtered.sort((a, b) => b.rating - a.rating);
+    filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0));
   } else if (sortOption === 'az') {
-    filtered.sort((a, b) => a.title.localeCompare(b.title));
+    filtered.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
   }
 
   gamesCountEl.textContent = `${filtered.length} games`;
 
   // Toggle hero visibility
   if (heroSection) {
-    heroSection.style.display = (activeCategory === 'all' && !q) ? 'block' : 'none';
+    heroSection.style.display = (activeCategory === 'all' && !q && allGames.length > 0) ? 'block' : 'none';
+  }
+
+  if (allGames.length === 0) {
+    gamesGrid.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 56px 20px; background: #0f172a; border-radius: 16px; border: 1px dashed var(--border-hover);">
+        <div style="width: 52px; height: 52px; border-radius: 12px; background: #1e293b; color: var(--accent-light); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </div>
+        <h3 style="font-size: 16px; font-weight: 700; color: #fff;">No Games in Library</h3>
+        <p style="font-size: 13px; color: var(--text-muted); max-width: 420px; margin: 8px auto 20px; line-height: 1.5;">
+          All games have been removed. You can add games anytime by clicking below or by adding iframe entries directly to <code>games.json</code>.
+        </p>
+        <button class="btn-primary" onclick="openModal('add-game-modal')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add Game
+        </button>
+      </div>
+    `;
+    return;
   }
 
   if (filtered.length === 0) {
     gamesGrid.innerHTML = `
       <div style="grid-column: 1 / -1; text-align: center; padding: 48px; background: #0f172a; border-radius: 12px; border: 1px solid var(--border-color);">
-        <p style="font-size: 15px; font-weight: 600; color: #fff;">No games found</p>
+        <p style="font-size: 15px; font-weight: 600; color: #fff;">No matching games</p>
         <p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">Try another search term or click "All Games".</p>
         <button class="btn-primary" style="margin-top: 16px;" onclick="resetFilter()">View All Games</button>
       </div>
@@ -353,7 +260,7 @@ function renderGames() {
     return `
       <div class="game-card" onclick="launchGame('${game.id}')">
         <div class="game-thumb-wrap">
-          <img class="game-thumb" src="${game.thumbnail}" alt="${game.title}" loading="lazy" onerror="this.style.display='none'" />
+          <img class="game-thumb" src="${game.thumbnail || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80'}" alt="${game.title}" loading="lazy" onerror="this.style.display='none'" />
           <button class="game-fav-btn ${isFav ? 'is-fav' : ''}" onclick="event.stopPropagation(); toggleFavorite('${game.id}')" title="Favorite">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           </button>
@@ -362,20 +269,20 @@ function renderGames() {
         <div class="game-info">
           <div>
             <div class="game-meta">
-              <span class="cat-name">${game.category}</span>
+              <span class="cat-name">${game.category || 'Arcade'}</span>
               <span>·</span>
               <span class="rating">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="#fbbf24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                ${Number(game.rating).toFixed(1)}
+                ${Number(game.rating || 5.0).toFixed(1)}
               </span>
               <span>·</span>
-              <span>${game.plays}</span>
+              <span>${game.plays || '0'}</span>
             </div>
             <div class="game-title">${game.title}</div>
-            <div class="game-desc">${game.description}</div>
+            <div class="game-desc">${game.description || ''}</div>
           </div>
           <div class="game-footer">
-            <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width: 140px;" title="${game.controls}">${game.controls}</span>
+            <span style="overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width: 140px;" title="${game.controls || 'Mouse/Keyboard'}">${game.controls || 'Controls'}</span>
             <span class="game-launch">Play &rarr;</span>
           </div>
         </div>
@@ -391,7 +298,7 @@ function renderRecent() {
     .map(id => allGames.find(g => g.id === id))
     .filter(Boolean);
 
-  if (recentGames.length === 0 || searchQuery) {
+  if (recentGames.length === 0 || searchQuery || allGames.length === 0) {
     recentSection.style.display = 'none';
     return;
   }
@@ -400,10 +307,10 @@ function renderRecent() {
   recentRail.innerHTML = recentGames.map(game => `
     <div style="flex-shrink:0; width:170px; background:#0f172a; border:1px solid var(--border-color); border-radius:10px; padding:8px; cursor:pointer;" onclick="launchGame('${game.id}')">
       <div style="aspect-ratio:16/10; border-radius:6px; overflow:hidden; background:#000; margin-bottom:6px;">
-        <img src="${game.thumbnail}" style="width:100%; height:100%; object-fit:cover;" />
+        <img src="${game.thumbnail || 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80'}" style="width:100%; height:100%; object-fit:cover;" />
       </div>
       <div style="font-size:12px; font-weight:700; color:#fff; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">${game.title}</div>
-      <div style="font-size:10px; color:var(--text-muted);">${game.category}</div>
+      <div style="font-size:10px; color:var(--text-muted);">${game.category || 'Arcade'}</div>
     </div>
   `).join('');
 }
@@ -422,11 +329,11 @@ window.launchGame = function(id) {
   const finalUrl = resolveGameUrl(game);
   playerIframe.src = finalUrl;
   playerTitle.textContent = game.title;
-  playerCategory.textContent = game.category;
-  playerRating.textContent = Number(game.rating).toFixed(1);
-  playerPlays.textContent = `${game.plays} plays`;
-  playerDesc.textContent = game.description;
-  playerControls.textContent = game.controls;
+  playerCategory.textContent = game.category || 'Arcade';
+  playerRating.textContent = Number(game.rating || 5.0).toFixed(1);
+  playerPlays.textContent = `${game.plays || 0} plays`;
+  playerDesc.textContent = game.description || '';
+  playerControls.textContent = game.controls || 'Keyboard / Mouse';
 
   // Tags
   if (game.tags && game.tags.length > 0) {
