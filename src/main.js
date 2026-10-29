@@ -46,6 +46,19 @@ const CLOAK_PRESETS = [
 // Fallback games
 const FALLBACK_GAMES = [
   {
+    id: "snow-rider-3d",
+    title: "Snow Rider 3D",
+    category: "Action",
+    badge: "Hot",
+    rating: 4.9,
+    plays: "920K",
+    thumbnail: "https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?auto=format&fit=crop&w=600&q=80",
+    description: "Ride a sleigh down steep snowy mountains at breakneck speeds. Dodge giant boulders, weave through pine trees, collect gifts, and unlock new sleighs.",
+    controls: "WASD or Arrow keys to steer and jump",
+    tags: ["3D", "Snow", "Sledding", "Runner", "Action", "Winter"],
+    iframeSrc: "https://ubghyper.github.io/GameList.github.io/Snow-Rider-3D/"
+  },
+  {
     id: "poly-track",
     title: "Poly Track",
     category: "Action",
