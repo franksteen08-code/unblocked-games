@@ -44,9 +44,11 @@ export default function App() {
     }
   });
 
-  // Fetch games from /games.json on mount
+  // Fetch games from games.json on mount
   useEffect(() => {
-    fetch('/games.json')
+    const baseUrl = import.meta.env.BASE_URL || './';
+    const jsonUrl = baseUrl.endsWith('/') ? `${baseUrl}games.json` : `${baseUrl}/games.json`;
+    fetch(jsonUrl)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch games.json');
         return res.json();

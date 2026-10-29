@@ -26,9 +26,17 @@ export const GamePlayer = ({
 
   // Extract the src from the iframe string or fallback to game.iframeSrc
   const getIframeSrc = () => {
-    if (game.iframeSrc) return game.iframeSrc;
-    const match = game.iframe?.match(/src=["']([^"']+)["']/i);
-    return match ? match[1] : '';
+    let src = game.iframeSrc;
+    if (!src && game.iframe) {
+      const match = game.iframe.match(/src=["']([^"']+)["']/i);
+      src = match ? match[1] : '';
+    }
+    if (src && src.startsWith('/games/')) {
+      const base = import.meta.env.BASE_URL || './';
+      const cleanBase = base.endsWith('/') ? base : `${base}/`;
+      src = cleanBase + src.slice(1);
+    }
+    return src;
   };
 
   const iframeSrc = getIframeSrc();
@@ -50,6 +58,7 @@ export const GamePlayer = ({
   // Open in an About:Blank window or clean popup
   const handleOpenAboutBlank = () => {
     try {
+      const resolvedUrl = new URL(iframeSrc, window.location.href).href;
       const newWin = window.open('about:blank', '_blank');
       if (newWin) {
         newWin.document.title = game.title;
@@ -64,10 +73,10 @@ export const GamePlayer = ({
         iframe.style.height = '100%';
         iframe.style.margin = '0';
         iframe.allow = 'fullscreen';
-        iframe.src = window.location.origin + iframeSrc;
+        iframe.src = resolvedUrl;
         newWin.document.body.appendChild(iframe);
       } else {
-        window.open(iframeSrc, '_blank');
+        window.open(resolvedUrl, '_blank');
       }
     } catch {
       window.open(iframeSrc, '_blank');
