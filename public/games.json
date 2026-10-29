@@ -10,8 +10,8 @@
     "description": "High-speed 3D tunnel runner. Steer your ball through an endless neon highway, dodge obstacles, and survive high-velocity drops.",
     "controls": "A/D or Left/Right Arrow to steer",
     "tags": ["3D", "Runner", "Fast-Paced", "Neon", "Arcade"],
-    "iframe": "<iframe src=\"/games/slope.html\" title=\"Slope Runner 3D\" allow=\"fullscreen; accelerometer; gyroscope\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/slope.html"
+    "iframe": "<iframe src=\"./games/slope.html\" title=\"Slope Runner 3D\" allow=\"fullscreen; accelerometer; gyroscope\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/slope.html"
   },
   {
     "id": "2048-classic",
@@ -24,8 +24,8 @@
     "description": "Join the numbers and get to the 2048 tile! Slide tiles across the grid, combine identical powers of two, and aim for the highest score.",
     "controls": "Arrow keys or WASD or Swipe to slide tiles",
     "tags": ["Numbers", "Brain", "Strategy", "Math"],
-    "iframe": "<iframe src=\"/games/2048.html\" title=\"2048 Classic\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/2048.html"
+    "iframe": "<iframe src=\"./games/2048.html\" title=\"2048 Classic\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/2048.html"
   },
   {
     "id": "flappy-bird",
@@ -38,8 +38,8 @@
     "description": "The timeless tap-to-fly arcade game. Guide your bird through treacherous green pipes without hitting the edges.",
     "controls": "Space, Click, or Tap to flap wings",
     "tags": ["Arcade", "One-Button", "Skill", "Addictive"],
-    "iframe": "<iframe src=\"/games/flappy-bird.html\" title=\"Flappy Bird\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/flappy-bird.html"
+    "iframe": "<iframe src=\"./games/flappy-bird.html\" title=\"Flappy Bird\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/flappy-bird.html"
   },
   {
     "id": "tetris-classic",
@@ -52,8 +52,8 @@
     "description": "Drop, rotate, and clear lines with falling tetromino blocks. Features SRS rotation, level scaling, and soft/hard drop.",
     "controls": "Left/Right to move, Up to rotate, Down to soft drop, Space to hard drop",
     "tags": ["Retro", "Puzzle", "Blocks", "Strategy"],
-    "iframe": "<iframe src=\"/games/tetris.html\" title=\"Tetris Classic\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/tetris.html"
+    "iframe": "<iframe src=\"./games/tetris.html\" title=\"Tetris Classic\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/tetris.html"
   },
   {
     "id": "cookie-clicker",
@@ -66,8 +66,8 @@
     "description": "Bake millions of cookies! Hire grandmas, construct cookie farms, open factories, and ascend to cosmic confectionary greatness.",
     "controls": "Click big cookie and purchase empire upgrades",
     "tags": ["Idle", "Clicker", "Management", "Tycoon"],
-    "iframe": "<iframe src=\"/games/cookie-clicker.html\" title=\"Cookie Clicker Empire\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/cookie-clicker.html"
+    "iframe": "<iframe src=\"./games/cookie-clicker.html\" title=\"Cookie Clicker Empire\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/cookie-clicker.html"
   },
   {
     "id": "retro-snake",
@@ -80,8 +80,8 @@
     "description": "Eat the glowing apples, grow your tail, and avoid crashing into walls or yourself in this polished nostalgic arcade staple.",
     "controls": "Arrow keys or WASD to steer",
     "tags": ["Retro", "Classic", "Arcade", "Nokia"],
-    "iframe": "<iframe src=\"/games/snake.html\" title=\"Retro Snake\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/snake.html"
+    "iframe": "<iframe src=\"./games/snake.html\" title=\"Retro Snake\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/snake.html"
   },
   {
     "id": "space-invaders",
@@ -94,8 +94,8 @@
     "description": "Defend humanity against waves of descending alien invaders. Dodge enemy projectile barrages and clear the orbital sector.",
     "controls": "Arrow keys to move, Space to fire lasers",
     "tags": ["Retro", "Shooter", "Space", "Arcade"],
-    "iframe": "<iframe src=\"/games/space-invaders.html\" title=\"Space Invaders\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/space-invaders.html"
+    "iframe": "<iframe src=\"./games/space-invaders.html\" title=\"Space Invaders\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/space-invaders.html"
   },
   {
     "id": "neon-breakout",
@@ -108,8 +108,8 @@
     "description": "Smash your way through vibrant neon brick formations. Control the paddle bounce angle to target stubborn upper rows.",
     "controls": "Mouse or Left/Right arrows to control paddle",
     "tags": ["Brick Breaker", "Arcade", "Physics", "Neon"],
-    "iframe": "<iframe src=\"/games/breakout.html\" title=\"Neon Breakout\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/breakout.html"
+    "iframe": "<iframe src=\"./games/breakout.html\" title=\"Neon Breakout\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/breakout.html"
   },
   {
     "id": "retro-pong",
@@ -122,8 +122,8 @@
     "description": "The arcade forefather of video games. Challenge the computer with three difficulty modes, or challenge a friend locally in 2P mode.",
     "controls": "P1: W/S or Mouse | P2: Up/Down Arrows",
     "tags": ["Sports", "2-Player", "Retro", "Paddle"],
-    "iframe": "<iframe src=\"/games/pong.html\" title=\"Retro Pong\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
-    "iframeSrc": "/games/pong.html"
+    "iframe": "<iframe src=\"./games/pong.html\" title=\"Retro Pong\" allow=\"fullscreen\" allowfullscreen frameborder=\"0\"></iframe>",
+    "iframeSrc": "./games/pong.html"
   },
   {
     "id": "hextris",
