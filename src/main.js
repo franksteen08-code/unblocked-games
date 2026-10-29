@@ -46,6 +46,19 @@ const CLOAK_PRESETS = [
 // Fallback games
 const FALLBACK_GAMES = [
   {
+    id: "poly-track",
+    title: "Poly Track",
+    category: "Action",
+    badge: "Popular",
+    rating: 4.9,
+    plays: "780K",
+    thumbnail: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80",
+    description: "Fast-paced low-poly stunt racing game featuring looping tracks, high-speed jumps, custom track builder, and precision time-trial driving.",
+    controls: "WASD / Arrow keys to drive · R to restart track",
+    tags: ["Racing", "3D", "Cars", "Stunt", "Action", "Track Builder"],
+    iframeSrc: "https://ubghyper.github.io/GameList.github.io/Polytrack-New/"
+  },
+  {
     id: "brotato",
     title: "Brotato",
     category: "Action",
